@@ -29,6 +29,7 @@ Stampiamo il numero di porte e il tipo di carburante.
 | # SVOLGIMENTO
 **********************************************************/
 
+// CLASS Vehicle
 class Vehicle {
     brand;
     year;
@@ -40,16 +41,20 @@ class Vehicle {
         this.color = color;
     }
 
-    getInfo () {
-        return this.vehicleInfo = `Vehicle info || Brand: ${this.brand}, Year: ${this.year}, Color: ${this.color}`;
+    getAge () {
+        return Number(new Date().getFullYear()) - Number(fiatBlu.year);
     }
 
-    getAge () {
-        return this.vehicleAge = `age`;
-    }
+    getInfo () {
+        return this.vehicleInfo = `Vehicle info || Brand: ${this.brand}, Year: ${this.year}, Color: ${this.color}, Age (years): ${this.getAge()}`;
+    }   
 }
 
 
-// INSTANCE Fiat 2019 blu
+
+// INSTANCE of Vehicle: Fiat 2019 blu
 const fiatBlu = new Vehicle ('Fiat', 2019, 'blue');
-console.log(fiatBlu.getInfo() + ', ' + fiatBlu.getAge());
+console.log('INFO Fiat 2019 blue:');
+console.log(fiatBlu.getInfo());
+
+
