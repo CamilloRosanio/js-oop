@@ -42,19 +42,25 @@ class Vehicle {
     }
 
     getAge () {
-        return Number(new Date().getFullYear()) - Number(fiatBlu.year);
+        return Number(new Date().getFullYear()) - Number(this.year);
     }
 
-    getInfo () {
+    vehicleInfo () {
         return this.vehicleInfo = `Vehicle info || Brand: ${this.brand}, Year: ${this.year}, Color: ${this.color}, Age (years): ${this.getAge()}`;
-    }   
+    }
+
+    accelerate () {
+        console.log('Vrooom!');
+    }
 }
 
 
 
 // INSTANCE of Vehicle: Fiat 2019 blu
 const fiatBlu = new Vehicle ('Fiat', 2019, 'blue');
-console.log('INFO Fiat 2019 blue:');
-console.log(fiatBlu.getInfo());
+console.log('INFO Fiat:');
+console.log(fiatBlu);
+console.log(fiatBlu.vehicleInfo());
+console.log(fiatBlu.accelerate());
 
 
