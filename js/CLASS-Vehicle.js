@@ -57,10 +57,10 @@ class Vehicle {
 
 
 // INSTANCE of Vehicle: Fiat 2019 blu
-const fiatBlu = new Vehicle ('Fiat', 2019, 'blue');
-console.log('INFO Fiat:');
-console.log(fiatBlu);
-console.log(fiatBlu.vehicleInfo());
-console.log(fiatBlu.accelerate());
+// const fiatBlu = new Vehicle ('Fiat', 2019, 'blue');
+// console.log('INFO Fiat:');
+// console.log(fiatBlu);
+// console.log(fiatBlu.vehicleInfo());
+// console.log(fiatBlu.accelerate());
 
 

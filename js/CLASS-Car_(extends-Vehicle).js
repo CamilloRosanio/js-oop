@@ -30,11 +30,11 @@ class Car extends Vehicle {
 
 
 // INSTANCE of Vehicle: Opel, 2020, black, 4 doors, gasoline
-const opelNera = new Car ('Opel', 2020, 'black', 4, 'gasoline');
-console.log('INFO Opel:');
-console.log(opelNera);
-console.log(opelNera.vehicleInfo() + ', ' + opelNera.carInfo());
-console.log(opelNera.accelerate());
+// const opelNera = new Car ('Opel', 2020, 'black', 4, 'gasoline');
+// console.log('INFO Opel:');
+// console.log(opelNera);
+// console.log(opelNera.vehicleInfo() + ', ' + opelNera.carInfo());
+// console.log(opelNera.accelerate());
 
 
 
